@@ -1,6 +1,7 @@
 docker build -t nalamahen/multi-client:latest -t nalamahen/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t nalamahen/multi-server:latest -t nalamahen/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t nalamahen/multi-worker:latest -t nalamahen/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+
 docker push nalamahen/multi-client:latest
 docker push nalamahen/multi-server:latest
 docker push nalamahen/multi-worker:latest
